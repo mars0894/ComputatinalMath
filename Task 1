@@ -1,0 +1,22 @@
+program Cho_Za_Esen
+implicit none
+real :: epsilon32
+double precision :: epsilon64
+
+
+epsilon32=1.0
+do while (1.0 + epsilon32 > 1.0)
+epsilon32=epsilon32/2.0
+end do
+epsilon32=epsilon32*2.0
+write (*,*) "float(32)",epsilon32
+
+
+
+epsilon64=1.0
+do while (1.0 + epsilon64 > 1.0)
+epsilon64=epsi64/2.0
+end do
+epsilon64=epsilon64*2.0
+write(*,*) "float(64)", epsilon64
+end program Cho_Za_Esen
